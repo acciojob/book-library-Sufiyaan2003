@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Book Library</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             background: #f8f8f8;
@@ -44,29 +43,30 @@
         .book-info {
             width: 90%;
             margin: 0 auto;
-            margin-top: 0;
         }
-        .book-title {
+        h2.book-title {
             font-weight: 700;
             font-size: 1.15em;
             margin: 0;
             letter-spacing: 1px;
         }
         .book-author {
-            color: #777;
+            color: #777777; /* rgb(119,119,119) */
             font-size: 0.98em;
             margin-top: 4px;
             margin-bottom: 18px;
+            text-transform: capitalize;
         }
         .price-block {
-            background: #2ecc71;
-            color: #fff;
+            background: #2ecc71; /* rgb(46, 204, 113) */
+            color: #ffffff; /* rgb(255, 255, 255) */
             padding: 10px 0;
             border-radius: 6px;
             margin: 12px auto 0;
             font-weight: 600;
             font-size: 1.1em;
             width: 94%;
+            text-align: center;
         }
         @media (max-width: 600px) {
             .book-library {
@@ -92,7 +92,7 @@
         <div class="book">
             <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Spy-in-the-Amber-by-Manohar-Malgonkar.jpg" alt="Spy in the Amber" />
             <div class="book-info">
-                <p class="book-title">SPY IN THE AMBER</p>
+                <h2 class="book-title">SPY IN THE AMBER</h2>
                 <p class="book-author">BY Manohar Malgonkar</p>
             </div>
             <div class="price-block">Rs. 299</div>
@@ -101,7 +101,7 @@
         <div class="book">
             <img src="https://images-na.ssl-images-amazon.com/images/I/91ocU8970hL.jpg" alt="Sacred Games" />
             <div class="book-info">
-                <p class="book-title">Sacred Games</p>
+                <h2 class="book-title">Sacred Games</h2>
                 <p class="book-author">by Vikram Chandra</p>
             </div>
             <div class="price-block">Rs. 199</div>
@@ -110,12 +110,13 @@
         <div class="book">
             <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Byomkesh-Bakshi-by-Sharadindu-Bandyopadhyay.jpg" alt="Byomkesh Bakshi" />
             <div class="book-info">
-                <p class="book-title">BYOMKESH BAKSHI</p>
+                <h2 class="book-title">BYOMKESH BAKSHI</h2>
                 <p class="book-author">By Sharadindu Bandyopadhyay</p>
             </div>
             <div class="price-block">Rs. 249</div>
         </div>
     </div>
+
     <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
